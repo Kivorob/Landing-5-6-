@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Denis Novik</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="menu">
+        <a href="#hero-block" class="menu__link">Home</a>
+        <a href="#aboutme-block" class="menu__link">About me</a>
+        <a href="#skills-block" class="menu__link">Skills</a>
+        <a href="#portfolio-block" class="menu__link">Portfolio</a>
+        <a href="#footer" class="menu__link">Contacts</a>
+      </nav>
+      <hr color="#828282" />
+      <div class="mobile-menu">
+        <a href="#" class="menu-trigger" onclick="on()"> ☰ </a>
+        <nav class="popup-menu" id="popup-menu">
+          <a href="#" onclick="off()" class="menu-close">X</a>
+          <li class="menu__link"><a href="#hero-block" class="menu__link" onclick="off()">Home</a></li>
+          <li class="menu__link"><a href="#aboutme-block" class="menu__link" onclick="off()"
+            >About me</a
+          ></li>
+          <li class="menu__link"><a href="#skills-block" class="menu__link" onclick="off()">Skills</a></li>
+          <li class="menu__link"><a href="#portfolio-block" class="menu__link" onclick="off()"
+            >Portfolio</a
+          ></li>
+          <li class="menu__link"><a href="#footer" class="menu__link" onclick="off()">Contacts</a></li>
+          <div class="switcher"><a href="#" id="ru" >RU</a> | <a href="#" id="en" >ENG</a></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="hero-block" id="hero-block">
+        <div class="hero-block__text">
+          <div class="title">
+            <span>Denis<br /></span>
+            <span>Novik</span>
+          </div>
+          <div
+            class="text"
+            style="padding: 0.5%; line-height: 1.5; text-align: left"
+          >
+            <span> UX | UI designer <br />
+             24 years old, Minsk </span>
+          </div>
+          <div class="switcher"><a href="">RU</a> | <a href="">ENG</a></div>
+        </div>
+        <img src="./img/Hero-Block.png" alt="" class="image-desk" />
+        <img src="./img/hero_mobile.png" alt="" class="image-mobile" />
+      </div>
+      <div class="aboutme-block" id="aboutme-block">
+        <span class="title">About me</span>
+        <span class="text">
+          Hi, I'm Denis – UX/UI designer from Minsk. <br />
+          I'm interested in design and everything connected with it.
+        </span>
+        <span class="text">
+          I'm studying at courses "Web and mobile design <br />
+          interfaces" in IT-Academy.
+        </span>
+        <span class="text">
+          Ready to implement excellent projects <br />
+          with wonderful people.
+        </span>
+      </div>
+      <div class="skills-block" id="skills-block">
+        <span class="title">Skills</span>
+        <span class="text">I work in such programs as</span>
+        <div class="container">
+          <div class="element">
+            <img src="./img/Photoshop_logo.svg" alt="" class="logo" />
+            <span class="title">Adobe <br> Photoshop</span>
+            <img src="./img/4_rate.svg" alt="" class="rate" />
+          </div>
+          <div class="element">
+            <img src="./img/illustrator_logo.svg" alt="" class="logo" />
+            <span class="title">Adobe <br> Illustrator</span>
+            <img src="./img/3_rate.svg" alt="" class="rate"/>
+          </div>
+          <div class="element">
+            <img src="./img/ae_logo.svg" alt="" class="logo" />
+            <span class="title">Adobe <br> AfterEffects</span>
+            <img src="./img/4_rate.svg" alt="" class="rate"/>
+          </div>
+          <div class="element">
+            <img src="./img/figma_logo.svg" alt="" class="logo"/>
+            <span class="title">Figma <br> ⠀</span>
+            <img src="./img/4_rate.svg" alt="" class="rate" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-block" id="portfolio-block">
+        <span class="title">Portfolio</span>
+        <div class="container">
+          <img
+            src="./img/fashion_page.png"
+            alt=""
+            class="portfolio__block__container_img"
+          />
+          <div class="text portfolio-block__text">
+            Online fashion store - Homepage
+          </div>
+        </div>
+        <div class="container">
+          <img
+            src="./img/reebok_page.png"
+            alt=""
+            class="portfolio__block__container_img"
+          />
+          <div class="text portfolio-block__text">Reebok Store - Concept</div>
+        </div>
+        <div class="container">
+          <img
+            src="./img/braun_page.png"
+            alt=""
+            class="portfolio__block__container_img"
+          />
+          <div class="text portfolio-block__text">
+            Braun Landing Page - Concept
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer" id="footer">
+      <span class="title">Contacts</span>
+      <span class="text"
+        >Want to know more or just chat? <br />
+        You are welcome!</span
+      >
+      <a href="#" class="footer__button text">
+        <div>Send message</div>
+      </a>
+      <div class="footer__logo_container">
+        <a href="#"
+          ><img
+            src="./img/linkd_logo.svg"
+            alt=""
+            class="footer__logo_container_img"
+          />
+        </a>
+        <a href="#"
+          ><img
+            src="./img/insta_logo.svg"
+            alt=""
+            class="footer__logo_container_img"
+        /></a>
+        <a href="#"
+          ><img
+            src="./img/behance_logo.svg"
+            alt=""
+            class="footer__logo_container_img"
+        /></a>
+        <a href="#"
+          ><img
+            src="./img/web_logo.svg"
+            alt=""
+            class="footer__logo_container_img"
+        /></a>
+      </div>
+      <span class="text footer__text"
+        >Link me on <br />
+        LinkedIn, Instagram, Behance, Dribble</span
+      >
+    </div>
+  </body>
+</html>
